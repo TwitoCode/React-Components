@@ -1,3 +1,4 @@
+import { Weight } from './../types';
 import styled from 'styled-components';
 
 interface Props {
@@ -6,6 +7,8 @@ interface Props {
 	textColor?: string;
 	softBorder?: boolean;
 	boldBorder?: boolean;
+	weight?: Weight;
+	family?: string;
 }
 
 export const Input = styled.input<Props>`
@@ -23,4 +26,6 @@ export const Input = styled.input<Props>`
 				return 'none';
 		}
 	}};
+	font-weight: ${({ weight }) => (weight ? weight : '400')};
+	font-family: ${({ family }) => (family ? family : '"Segoe UI", sans-serif')};
 `;

@@ -1,10 +1,11 @@
+import { JustifyAlign, Direction } from './../types';
 import styled from 'styled-components';
 
 interface Props {
-	justify?: string;
-	align?: string;
+	justify?: JustifyAlign;
+	align?: JustifyAlign;
 	wrap?: boolean;
-	direction?: string;
+	direction?: Direction;
 }
 
 export const Flex = styled.div<Props>`
