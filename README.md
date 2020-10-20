@@ -14,18 +14,18 @@ yarn add @twitocode/react-components
 
 **Example:**
 
-```typescriptreact
+```typescript
 import { Text } from '@twitocode/react-components';
 
 export const App = () => {
-  return (
-    <>
-      <Text color='black' align='center'>
-        Hello World!
-      </Text>
-    </>
-  )
-}
+	return (
+		<>
+			<Text color='black' align='center'>
+				Hello World!
+			</Text>
+		</>
+	);
+};
 ```
 
-[Github Repo](https://https://github.com/TwitoCode/React-Components)
+[Github Repo](https://github.com/TwitoCode/React-Components)
