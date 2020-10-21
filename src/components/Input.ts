@@ -4,17 +4,19 @@ import styled from 'styled-components';
 interface Props {
 	w?: string;
 	pad?: string;
-	textColor?: string;
 	softBorder?: boolean;
 	boldBorder?: boolean;
-	weight?: Weight;
-	family?: string;
+	fontColor?: string;
+	fontSize?: string;
+	fontWeight?: Weight;
+	fontFamily?: string;
+	radius?: string;
 }
 
 export const Input = styled.input<Props>`
 	width: ${({ w }) => (w ? w : '100%')};
-	padding: ${({ pad }) => (pad ? pad : '0.25rem')};
-	color: ${({ textColor }) => (textColor ? textColor : '#cccccc')};
+	padding: ${({ pad }) => (pad ? pad : '2rem')};
+	color: ${({ fontColor }) => (fontColor ? fontColor : '#cccccc')};
 	outline: none;
 	border: ${({ softBorder, boldBorder }) => {
 		switch (true) {
@@ -26,6 +28,8 @@ export const Input = styled.input<Props>`
 				return 'none';
 		}
 	}};
-	font-weight: ${({ weight }) => (weight ? weight : '400')};
-	font-family: ${({ family }) => (family ? family : '"Segoe UI", sans-serif')};
+	border-radius: ${({ radius }) => (radius ? radius : 'none')};
+	font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : '400')};
+	font-family: ${({ fontFamily }) =>
+		fontFamily ? fontFamily : '"Segoe UI", sans-serif'};
 `;

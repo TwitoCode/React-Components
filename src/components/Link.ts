@@ -9,7 +9,7 @@ interface Props {
 	family?: string;
 }
 
-export const Link = styled(RLink)<Props>`
+const Link = styled(RLink)<Props>`
 	color: ${({ color }) => (color ? color : 'white')};
 	font-size: ${({ size }) => (size ? size : '1.25rem')};
 	font-weight: ${({ weight }) => (weight ? weight : '400')};

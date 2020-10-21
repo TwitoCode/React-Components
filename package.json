@@ -1,6 +1,6 @@
 {
 	"name": "@twitocode/react-components",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "My personal React Styled-component Library",
 	"main": "./lib/cjs/index.js",
 	"module": "./lib/esm/index.js",

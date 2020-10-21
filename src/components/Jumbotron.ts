@@ -9,6 +9,7 @@ interface Props {
 	boldBorder?: boolean;
 	softBorder?: boolean;
 	h?: string;
+	w?: string;
 }
 
 export const Jumbotron = styled.div<Props>`
@@ -28,9 +29,9 @@ export const Jumbotron = styled.div<Props>`
 		background: rgba(0, 0, 0, 0.5);
 	}
 
-	width: 100vw;
+	width: ${({ w }) => (w ? w : '100%')};
 	height: ${({ h }) => (h ? h : '40vh')};
-  
+
 	border-bottom: ${({ boldBorder, softBorder }) => {
 		switch (true) {
 			case boldBorder:
