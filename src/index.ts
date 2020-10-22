@@ -9,5 +9,6 @@ export { BackgroundImage } from './components/BackgroundImage';
 export { Jumbotron } from './components/Jumbotron';
 export { Image } from './components/Image';
 export { Box } from './components/Box';
+export { Link } from './components/Link';
 
 export { Direction, JustifyAlign, Weight, TextAlign } from './types';

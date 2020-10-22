@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 interface Props {
 	w?: string;
-	pad?: string;
+	paddingTop?: string;
+	paddingLeft?: string;
 	softBorder?: boolean;
 	boldBorder?: boolean;
 	fontColor?: string;
@@ -15,7 +16,10 @@ interface Props {
 
 export const Input = styled.input<Props>`
 	width: ${({ w }) => (w ? w : '100%')};
-	padding: ${({ pad }) => (pad ? pad : '2rem')};
+	padding-top: ${({ paddingTop }) => (paddingTop ? paddingTop : '2rem')};
+	padding-bottom: ${({ paddingTop }) => (paddingTop ? paddingTop : '2rem')};
+	padding-right: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : '2rem')};
+	padding-left: ${({ paddingLeft }) => (paddingLeft ? paddingLeft : '2rem')};
 	color: ${({ fontColor }) => (fontColor ? fontColor : '#cccccc')};
 	outline: none;
 	border: ${({ softBorder, boldBorder }) => {
